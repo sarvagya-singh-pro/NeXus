@@ -158,11 +158,21 @@ const page = () => {
       </video>
      </div>
      <div className={styles.projectcard}>
+     <div className={styles.shade}>
       <h2>Inter DPS</h2>
+     </div>
+     <video  autoPlay muted loop  style={{ width: '100%', height: '100%' }}>
+        <source  src="/prayaas.mp4" />
+      </video>
      </div>
      
      <div className={styles.projectcard}>
-      <h2>HAVK</h2>
+     <div className={styles.shade}>
+      <h2>Lorem Ipsum</h2>
+     </div>
+     <video  autoPlay muted loop  style={{ width: '100%', height: '100%' }}>
+        <source  src="/educationindia.mp4" />
+      </video>
      </div>
      
     
