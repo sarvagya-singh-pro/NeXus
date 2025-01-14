@@ -5,8 +5,8 @@ import { Suspense, useState } from 'react';
 import { AppShell, Title,Image,Group,UnstyledButton,Burger} from '@mantine/core';
 import MouseFollower from '@/components/mousetracker';
 import Footer from '@/components/Footer';
-const DynamicComponentWithNoSSR = dynamic(
-    () => import('./app'), // Your main component
+const MainPage = dynamic(
+    () => import('../components/pages/main'), // Your main component
     {
         ssr: false, // Disable server-side rendering for this component
         loading: () => <Loading /> // Specify the loading component
@@ -52,7 +52,7 @@ const Page = () => {
         <UnstyledButton w={"100%"} m={'md'} h={"xl"}>News </UnstyledButton>
       </AppShell.Navbar>
           <AppShell.Main>
-            <DynamicComponentWithNoSSR />
+            <MainPage />
             </AppShell.Main>
             </AppShell>
             </Suspense>

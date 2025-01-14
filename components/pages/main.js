@@ -3,9 +3,8 @@ import dynamic from 'next/dynamic'
 import{delay, motion,useScroll} from 'framer-motion'
 import { useState,useEffect,useRef, Suspense} from 'react'
 import { Center, SimpleGrid ,MantineProvider} from '@mantine/core'
-import styles from './page.module.css'
+import styles from '../css/page.module.css'
 import Image from 'next/image'
-import Sarvagya from './sarvagya.png'
 import { useLoader,extend } from '@react-three/fiber'
 import { Sphere,OrbitControls} from '@react-three/drei'
 import '@mantine/core/styles.css';
@@ -77,7 +76,7 @@ const page = () => {
    
     <div className={styles.landing}>
    
-      <Image className={styles.me} unselectable="on" src={Sarvagya}  width={500}
+      <Image className={styles.me} unselectable="on" src={'/sarvagya.png'}  width={500}
       height={500}
       alt="Picture of the author"></Image>
       <motion.h1  className={styles.banner}  style={{
