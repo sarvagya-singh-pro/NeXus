@@ -1,0 +1,28 @@
+.footer{
+    width: 100vw;
+    margin-bottom: -30px;
+    background: #000;
+    display: block;
+    position: relative;
+    z-index: 56;
+    bottom: 0px;
+    border-top: 1px solid white;
+}
+.footer h1{
+    display: inline-block !important;
+    text-align: left !important;
+    margin-left: 30px !important;
+    left: 20px !important;
+}
+.footer h3{
+    color: #fff;
+    padding-left: 30px;
+    font-weight: 400;;
+}
+.footer p{
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 1rem;
+}
